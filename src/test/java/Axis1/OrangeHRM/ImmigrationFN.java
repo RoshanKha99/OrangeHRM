@@ -27,14 +27,14 @@ public class ImmigrationFN extends Login{
 		System.out.println("Number Entered");
 		
 		
-		WebElement issdate = driver.findElement(By.xpath("(//input[@class='oxd-input oxd-input--active'])[2]"));
-		issdate.click();
-		issdate.sendKeys("2023-01-01");
+		WebElement issue_date = driver.findElement(By.xpath("(//input[@class='oxd-input oxd-input--active'])[2]"));
+		issue_date.click();
+		issue_date.sendKeys("2023-01-01");
 		System.out.println("Issue Date Selected");
 		
-		WebElement expdate = driver.findElement(By.xpath("(//input[@class='oxd-input oxd-input--active'])[3]"));
-		expdate.click();
-		expdate.sendKeys("2026-01-01");
+		WebElement expiry_date = driver.findElement(By.xpath("(//input[@class='oxd-input oxd-input--active'])[3]"));
+		expiry_date.click();
+		expiry_date.sendKeys("2026-01-01");
 		System.out.println("Expiry Date Selected");
 
 		WebElement eligiblestatus = driver.findElement(By.xpath("(//input[@class='oxd-input oxd-input--active'])[4]"));
@@ -42,15 +42,15 @@ public class ImmigrationFN extends Login{
 		eligiblestatus.sendKeys("Eligible");
 		System.out.println("Eligible Status Added");
 		
-		WebElement revdate = driver.findElement(By.xpath("(//input[@class='oxd-input oxd-input--active'])[5]"));
-		revdate.click();
-		revdate.sendKeys("2023-08-03");
+		WebElement review_date = driver.findElement(By.xpath("(//input[@class='oxd-input oxd-input--active'])[5]"));
+		review_date.click();
+		review_date.sendKeys("2023-08-03");
 		System.out.println("Review Date Selected");
 		
 		WebElement comments = driver.findElement(By.xpath("(//textarea[@placeholder='Type Comments here'])[1]"));
 		comments.click();
-		comments.sendKeys("OrangeHRM would be better");
-		System.out.println("Clicked on Comments Box ");
+		comments.sendKeys("Immigration details adding");
+		System.out.println("Comment added successfully");
 		
 		WebElement save = driver.findElement(By.xpath("//button[normalize-space()='Save']"));
 		save.click();
